@@ -1,0 +1,6 @@
+{
+  "name": "Relation Healthcare",
+  "description": "Official corporate website of Relation Healthcare featuring pharmaceutical products, catalogue, employee reporting, and administrative control.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

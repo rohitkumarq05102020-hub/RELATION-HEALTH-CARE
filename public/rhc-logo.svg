@@ -1,0 +1,77 @@
+<svg viewBox="0 0 200 240" width="200" height="240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="rhcArrowGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#1E88E5" />
+      <stop offset="28%" stop-color="#29B6F6" />
+      <stop offset="55%" stop-color="#4CAF50" />
+      <stop offset="80%" stop-color="#C0CA33" />
+      <stop offset="100%" stop-color="#FDD835" />
+    </linearGradient>
+    <linearGradient id="rhcReflectMask" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45" />
+      <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+    <mask id="reflectMask">
+      <rect x="0" y="185" width="200" height="55" fill="url(#rhcReflectMask)" />
+    </mask>
+  </defs>
+
+  <g id="rhc-main-mark">
+    <!-- Upward Rising Arrow -->
+    <path
+      d="M 100 10 L 155 68 L 132 68 C 126 100, 134 135, 195 180 L 5 180 C 66 135, 74 100, 68 68 L 45 68 Z"
+      fill="url(#rhcArrowGrad)"
+      stroke="#43A047"
+      stroke-width="0.75"
+    />
+
+    <!-- Ornate Red Calligraphic R -->
+    <g id="rhc-monogram" fill="#D32F2F" stroke="#D32F2F">
+      <path
+        d="M 85 45 C 83 40, 88 34, 96 34 C 104 34, 114 36, 114 43 C 114 48, 107 51, 98 52 L 115 63 C 117 64, 115 67, 112 67 C 108 67, 102 61, 97 53 C 94 53, 92 53, 90 53 L 88 64 C 88 66, 85 66, 85 63 Z M 92 48 C 96 48, 106 48, 106 42 C 106 38, 98 37, 94 37 C 91 37, 90 40, 91 44 Z"
+        stroke-width="0.5"
+      />
+      <path
+        d="M 82 40 C 82 34, 90 30, 98 30 C 104 30, 109 32, 109 34 C 109 36, 105 37, 100 35 C 93 33, 86 35, 84 39 Z"
+        stroke-width="0.3"
+      />
+      <!-- Bold Red HC -->
+      <text
+        x="100"
+        y="88"
+        font-family="'Plus Jakarta Sans', Arial, sans-serif"
+        font-size="28"
+        font-weight="900"
+        fill="#D32F2F"
+        text-anchor="middle"
+        letter-spacing="0.5"
+        stroke="none"
+      >
+        HC
+      </text>
+    </g>
+
+    <!-- Silhouette Figures on Left Slope -->
+    <g id="rhc-figures" fill="#111827">
+      <circle cx="68" cy="116" r="6" />
+      <path d="M 68 123 C 65 125, 59 130, 52 135 C 46 139, 39 146, 35 152 L 33 150 C 38 143, 46 136, 52 131 C 60 126, 64 122, 67 121 Z" />
+      <path d="M 68 123 L 80 137 L 77 142 L 65 130 Z" />
+      <path d="M 72 125 C 78 126, 85 132, 92 139 L 89 142 C 83 135, 77 130, 70 128 Z" />
+      <path d="M 80 137 L 91 154 L 86 156 L 76 142 Z" />
+      <path d="M 78 138 L 73 155 L 68 154 L 74 140 Z" />
+
+      <circle cx="28" cy="142" r="5.5" />
+      <path d="M 29 148 C 32 147, 36 148, 42 148 C 46 148, 50 144, 53 138 L 55 140 C 51 147, 47 151, 41 151 C 36 151, 32 150, 28 151 Z" />
+      <path d="M 28 148 L 22 162 L 18 160 L 25 147 Z" />
+      <path d="M 25 150 C 18 153, 14 158, 10 163 L 8 160 C 12 155, 17 150, 24 147 Z" />
+      <path d="M 22 162 L 28 178 L 24 179 L 19 164 Z" />
+      <path d="M 20 163 L 13 177 L 9 175 L 17 162 Z" />
+    </g>
+  </g>
+
+  <!-- Mirror Reflection -->
+  <g transform="translate(0, 360) scale(1, -1)" opacity="0.3" mask="url(#reflectMask)">
+    <use href="#rhc-main-mark" />
+  </g>
+</svg>
